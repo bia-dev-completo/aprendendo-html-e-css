@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+
+
+/* NAVIGATION */
+nav{
+  position: fixed;
+  background: #EDEDED;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  -webkit-box-shadow: 4px 2px 5px 0px rgba(0,0,0,0.31);
+  -moz-box-shadow: 4px 2px 5px 0px rgba(0,0,0,0.31);
+  box-shadow: 4px 2px 5px 0px rgba(0,0,0,0.31);
+}
+
+#navigation-buttons{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 72px;
+  padding-right: 63px;
+}
+
+/* TYPOGRAPHY */
+h1{
+  font-family: "Rubik Mono One", monospace;
+  font-weight: 400;
+  font-size: 4rem;
+  color: #fff;
+}
+
+h2{
+  color: #B6B6B6;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+p, li, h2{
+  font-family: "Rubik", sans-serif;
+}
+
+p{
+  color: #fff;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  font-weight: 200;
+}
+
+li{
+  padding: 20px 0;
+}
+
+/* global styles */
+.tinyPaddingBottom{
+  padding-bottom: 0.5rem;
+}
+
+.smallPaddingBottom{
+  padding-bottom: 1rem;
+}
+
+.smallPaddingRight{
+  padding-right: 1rem;
+}
+
+.mediumPaddingBottom{
+  padding-bottom: 2rem;
+}
+
+.bigPaddingBottom{
+  padding-bottom: 4rem;
+}
+
+.hugePaddingBottom{
+  padding-bottom: 8rem;
+}
+
+.bigPaddingTop{
+  padding-top: 4rem;
+}
+
+
+/* SECTIONS´S DIVS */
+
+section{
+  width: 100%;
+  height: 100vh;
+}
+
+.rowSection{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.vertical_section_container{
+  display: flex;
+  flex-direction: column;
+  padding: 0 8rem;
+  margin-bottom: 4rem;
+  max-width: 800px;
+}
+
+.rowContainer{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+
+/* landing page section */
+#landing_page{
+  background: #222222;
+}
+
+/* about me section */
+#about_me_page{
+  background: #FF9E44;
+}
+
+#skills_page{
+  height: 100vh;
+  width: 100%;
+  background-image: url("assets/photos/study.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#overlay_container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.3); /* White with 30% opacity */
+
+  
+  h1{
+    color: #3C3C3C;
+  }
+
+  ul{
+    display: flex;
+    max-width: 800px;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  li{
+    background: rgba(0, 0, 0, 0.3);
+    padding: 0.6rem;
+    border-radius: 8px;
+    width: fit-content;
+    color: #fff;
+    font-size: 2rem;
+  }
+}
+
+/* contact section */
+#contact_page{
+  background: #2343E3;
+}
+
+/* ASSETS: */
+#coffee_icon{
+  height: 2rem;
+  width: 2rem;
+  padding-left: 63px;
+}
+
+.button_icon{
+  height: 1.2rem;
+  padding-right: 8px;
+}
+
+.screenHeightPhoto{
+  height: 100vh;
+}
+
+/* BUTTONS */
+
+button{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width: fit-content;
+  padding: 9px 12px;
+  font-size: 1.2rem;
+  color: #FFFFFF;
+  background: #FF9E44;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#about_me_button{
+  background: #FEAF67;
+}
+
+.socialMediaButton{
+  background: #3756F3;
+  padding: 0.6rem;
+  border-radius: 8px;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.socialMediaIcon{
+  height: 1.5rem;
+  width: 1.5rem;
+}
