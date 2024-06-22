@@ -1,0 +1,42 @@
+h1{
+  color: rgba(200, 35, 35, 1);
+}
+
+#hexadecimal{
+  color: #0000ff;
+}
+
+#hexadecimalComOpacidade{
+  color: #0000ff50;
+}
+
+#rgb{
+  color: rgb(203, 12, 229);
+}
+
+#rgba{
+  color: rgb(203, 12, 229, 0.5);
+}
+
+section{
+  background-color: rgb(251, 255, 220);
+  font-size: 20px;
+}
+
+#porcentagem{
+  font-size: 50%;
+}
+
+#em{
+  font-size: 2em; /*2X o tamanho da font-size do elemento pai*/
+}
+
+#rem{
+  font-size: 1rem; /*1X o tamanho do elemento raiz <html>*/
+}
+
+#caixa{
+  background-color: pink;
+  height: 50vh;
+  width: 100vw;
+}

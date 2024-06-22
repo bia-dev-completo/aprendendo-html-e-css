@@ -1,0 +1,18 @@
+#caixa1, #caixa2{
+  width: 100px;
+  height: 100px;
+}
+
+#caixa1{
+  background-color: #eb399e;
+  padding: 10px;
+  border: 2px solid #000000;
+  /* margin: 0px 0px 10px 0px; topo, direita, baixo, esquerda*/
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+#caixa2{
+  background-color: #53dc41;
+  box-sizing: border-box;
+}

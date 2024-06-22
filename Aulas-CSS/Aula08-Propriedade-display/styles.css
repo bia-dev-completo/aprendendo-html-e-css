@@ -1,0 +1,26 @@
+#block{
+  background-color: #e934344c;
+}
+
+#inline{
+  background-color: #5be9344c;
+}
+
+#inlineBlock{
+  background-color: #3434e94c;
+}
+
+p{
+  background-color: red;
+  width: 100px;
+}
+
+span{
+  background-color: green;
+  width: 400px;
+}
+
+#itemInlineBlock{
+  background-color: #6b2cd8;
+  display: inline-block;
+}

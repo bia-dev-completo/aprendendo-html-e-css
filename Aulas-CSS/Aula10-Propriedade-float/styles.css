@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li{
+  list-style-type: none;
+  display: inline-block;
+  line-height: 30px;
+  padding: 0 10px;
+}
+
+ul{
+  float: right;
+}
+
+nav{
+  padding: 10px 50px;
+  height: 30px;
+  background-color: rgb(223, 223, 223);
+  img{
+    height: 24px;
+  }
+}
+
+.bia{
+  height: 300px;
+  float: left;
+  padding: 0 20px 20px 0;
+}
+
+.noticias{
+  border: 2px solid red;
+  overflow: auto;
+  margin-top: 20px
+}

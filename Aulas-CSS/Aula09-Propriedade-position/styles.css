@@ -1,0 +1,16 @@
+#itens{
+  background-color: rgb(197, 237, 185);
+  height: 200px;
+  position: relative;
+}
+
+span{
+    background-color: rgb(110, 200, 82);
+}
+
+#absoluta{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

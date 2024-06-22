@@ -1,0 +1,16 @@
+img{
+  border-radius: 50%;
+  height: 200px;
+  /* border: 2px solid red; */
+  filter: grayscale(100%);
+}
+
+#bia{
+  background-image: url('assets/foto-Bia.jpeg');
+  height: 200px;
+  width: 200px;
+  background-size: cover;
+  background-position: 0 80%;
+  /*background-position: horizontal vertical;*/
+  border-radius: 50%;
+}
