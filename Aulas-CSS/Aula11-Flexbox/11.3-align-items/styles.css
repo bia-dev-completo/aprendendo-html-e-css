@@ -1,0 +1,27 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.container{
+  display: flex;
+  height: 200px;
+  border: 2px solid black;
+  flex-direction: row; /*row, row-reverse, column, column-reverse*/
+  justify-content: flex-start; /* flex-start, center, flex-end, space-around, space-evenly, space-between*/
+  align-items: baseline; /* stretch, flex-start, flex-end, center e baseline*/
+}
+
+.item{
+  background-color: tomato;
+  margin: 10px;
+  padding: 10px 0;
+}
+
+.i3{
+  font-size: 40px;
+}

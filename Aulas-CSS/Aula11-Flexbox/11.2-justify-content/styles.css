@@ -1,0 +1,21 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.container{
+  display: flex;
+  height: 500px;
+  border: 2px solid black;
+  flex-direction: column; /*row, row-reverse, column, column-reverse*/
+  justify-content: space-around; /* flex-start, center, flex-end, space-around, space-evenly, space-between*/
+}
+
+.item{
+  background-color: tomato;
+  /* margin: 10px; */
+}
