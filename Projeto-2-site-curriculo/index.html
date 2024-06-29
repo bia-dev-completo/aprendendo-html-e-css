@@ -3,88 +3,105 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Currículo Beatriz</title>
-  <link rel="stylesheet" type="text/css" href="reset.css"/>
-  <link rel="stylesheet" type="text/css" href="style.css"/>
+  <title>Document</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+</head>
 </head>
 <body>
   <nav>
-    <img src="assets/icons/coffee_icon.png" id="coffee_icon">
-    <ul id="navigation-buttons">
-      <li>Sobre Mim</li>
-      <li>Skills</li>
-      <li>
-        <strong>Contato</strong>
-      </li>
+    <img src="assets/icons/coffee.png">
+    <ul id="navBarLinks">
+      <li><a href="#aboutSection">Sobre Mim</a></li>
+      <li><a href="#skillsSection">Skills</a></li>
+      <li><a>Projetos</a></li>
+      <li><b><a href="#contactSection">Contato</a></b></li>
     </ul>
   </nav>
 
-  <section id="landing_page" class="rowSection">
-    <img src="assets/photos/bia.jpeg" class="screenHeightPhoto"/>
-    <div class="vertical_section_container">
-      <h1 class="smallPaddingBottom bigPaddingTop">Beatriz Schwartz</h1>
-      <h2 class="bigPaddingBottom">Software Engineer</h2>
-      <button>
-        <img src="assets/icons/download.svg" class="button_icon"/>
-        Baixar currículo
-      </button>
+  <section id="homeSection">
+    <div id="homePhoto"></div>
+    <div id="homeTexts">
+      <div>
+        <h1 class="title">Beatriz Schwartz</h1>
+        <h2>Engenheira de Software</h2>
+        <div class="defaultButton downloadButtonLight">
+          <img src="assets/icons/download.png">
+          <a href="sources/curriculo.pdf" download="curriculo.pdf">Baixar currículo</a>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section id="about_me_page" class="rowSection">
-    <div class="vertical_section_container">
-      <h1 class="mediumPaddingBottom">Sobre mim</h1>
-      <p class="bigPaddingBottom">Prazer! Eu sou a Bia, tenho 25 anos e sou de Londrina, Paraná. Sou uma desenvolvedora Front-End com mais de 4 anos de experiência no mercado de trabalho. Sempre trabalhei com a stack de React JS com Typescript, e por mais que eu não me considere full stack oficialmente, já tive a oportunidade de trabalhar com Node. Sou formada em Engenharia de Software na UTFPR .</p>
-      <button id="about_me_button">
-        <img src="assets/icons/arrow.svg"class="button_icon"/>
-        Confira meu LinkedIn
-      </button>
+  <section id="aboutSection">
+    <div id="aboutMeTextsFlexContainer">
+      <div id="aboutMeTextsFlexItem">
+        <h1 class="title">Sobre mim</h1>
+        <p class="customLineHeight">Prazer! Eu sou a Bia, tenho 25 anos e sou de Londrina, Paraná. Sou uma desenvolvedora Front-End com mais de 4 anos de experiência no mercado de trabalho. Sempre trabalhei com a stack de React JS com Typescript, e por mais que eu não me considere full stack oficialmente, já tive a oportunidade de trabalhar com Node. Sou formada em Engenharia de Software na UTFPR .</p>
+        <div class="defaultButton linkedinButton">
+          <img src="assets/icons/arrow.png">
+          <a href="https://www.linkedin.com/in/beatriz-schwartz/" target="_blank">Confira meu LinkedIn</a>
+        </div>
+      </div>
     </div>
-    <img src="assets/photos/graduation.jpeg" id="about_me_photo" class="screenHeightPhoto"/>
+    <div id="aboutMePhoto"></div>
   </section>
 
-  <section id="skills_page">
-    <div id="overlay_container">
-      <h1 class="bigPaddingBottom">Skills</h1>
-      <ul class="bigPaddingBottom">
+  <section id="skillsSection">
+    <div class="overlay">
+      <h1 class="title">Skills</h1>
+      <ul>
         <li>HTML</li>
         <li>CSS</li>
         <li>JavaScript</li>
-        <li>React JS</li>
-        <li>Inglês</li>
+        <li>ES6</li>
+        <li>React</li>
         <li>GoLang</li>
-        <li>Node JS</li>
+        <li>Git</li>
+        <li>GitHub</li>
       </ul>
+      <div class="defaultButton downloadButtonDark">
+        <img src="assets/icons/download.png">
+        <a href="sources/curriculo.pdf" download="curriculo.pdf">Baixar currículo completo</a>
+      </div>
     </div>
   </section>
 
-  <section id="contact_page" class="rowSection">
-    <div class="vertical_section_container">
-      <h1 class="bigPaddingBottom"><u>Contato</u></h1>
-      <p class="bigPaddingBottom">Gostaria de bater um papo comigo? Vou deixar todas as minhas formas de contato e redes sociais listadas abaixo.</p>
-      <div class="hugePaddingBottom">
-        <div class="rowContainer tinyPaddingBottom">
-          <img src="assets/icons/email.png" class="smallPaddingRight"/>
-          <p>contato@email.com</p>
+  <section id="contactSection">
+    <div id="contactTextsContainer">
+      <div id="contactTextsChild">
+        <h1 class="title">Contato</h1>
+        <p class="customLineHeight">Gostaria de bater um papo comigo? Vou deixar todas as minhas formas de contato e redes sociais listadas abaixo.</p>
+        
+        <address class="emailAndPhone">
+          <div class="contactItem">
+            <img class="emailIcon" src="assets/icons/email.png">
+            <p>contato@email.com</p>
+          </div>
+          <div class="contactItem">
+            <img src="assets/icons/whatsapp.png">
+            <p>+55 (00) 9 9999-9999</p>
+          </div>
+        </address>
+
+        <div class="socialMedia">
+          <a href="https://www.linkedin.com/in/beatriz-schwartz/" target="_blank">
+            <img src="assets/icons/linkedIn.png">
+          </a>
+          <a href="https://www.instagram.com/bia.codes/" target="_blank">
+            <img src="assets/icons/instagram.png">
+          </a>
+          <a href="https://github.com/beatrizsabbatini" target="_blank">
+            <img src="assets/icons/github.png">
+          </a>
         </div>
-        <div class="rowContainer">
-          <img src="assets/icons/whatsapp.png" class="smallPaddingRight"/>
-          <p>+55 (15) 9 9999-9999</p>
-        </div>
-      </div>
-      <div class="rowContainer">
-        <button class="socialMediaButton" class="smallMarginRight">
-          <img src="assets/icons/linkedIn.png" class="socialMediaIcon"/>
-        </button>
-        <button class="socialMediaButton">
-          <img src="assets/icons/instagram.png" class="socialMediaIcon"/>
-        </button>
-        <button class="socialMediaButton">
-          <img src="assets/icons/github.png" class="socialMediaIcon"/>
-        </button>
       </div>
     </div>
-    <img src="assets/photos/pannel.jpeg" id="about_me_photo" class="screenHeightPhoto"/>
+
+    <div id="contactPhoto"></div>
   </section>
 </body>
 </html>
