@@ -1,0 +1,52 @@
+:root {
+  --primary-color: rgb(245, 124, 88);
+  --secondary-color: rgb(208, 70, 27);
+  --border-radius: 10px;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+h1{
+  margin-bottom: 2rem;
+}
+
+h2{
+  margin: 1rem 0;
+}
+
+p{
+  display: inline;
+}
+
+body{
+  padding: 2rem;
+}
+
+div p{
+  background-color: red;
+}
+
+section > p{
+  background-color: blue;
+}
+
+.section2{
+  h2 + p{
+    background-color: pink;
+  }
+}
+
+.section3{
+  h2 ~ p{
+    background-color: orange;
+  }
+}
+
+h1 ~ h2{
+  color: red;
+}

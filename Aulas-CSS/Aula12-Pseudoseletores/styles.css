@@ -1,0 +1,87 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body{
+  padding: 2rem;
+}
+
+h2{
+  margin-top: 3rem;
+}
+
+.buttons{
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  width: 600px;
+
+  button{
+    background-color: rgb(245, 124, 88);
+    padding: 1rem;
+    border-radius: 10px;
+    border: none;
+    color: #ffffff;
+    transition-duration: 0.5s;
+  }
+
+  button:hover{
+    background-color: rgb(208, 70, 27);
+  }
+
+  button:focus{
+    outline: 2px solid rgb(208, 70, 27);
+  }
+}
+
+input{
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+input:focus{
+  outline: 2px solid rgb(208, 70, 27);
+}
+
+.texts{
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  width: 600px;
+
+  p:first-child{
+    color: rgb(46, 173, 82);
+    font-weight: bold;
+  }
+
+  p:last-child{
+    color: rgb(68, 0, 255);
+    font-weight: bold;
+  }
+}
+
+.images{
+  margin-top: 2rem;
+  display: flex;
+  width: 600px;
+  justify-content: space-between;
+
+  img{
+    height: 100px;
+  }
+
+  img:nth-child(odd){
+    border-radius: 50%;
+  }
+
+  img:nth-child(even){
+    border-radius: 10px;
+  }
+
+  img:nth-child(3){
+    filter: grayscale(100%);
+  }
+}

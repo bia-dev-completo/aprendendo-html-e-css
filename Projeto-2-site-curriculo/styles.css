@@ -1,3 +1,11 @@
+:root{
+  --primary-color: #3C3C3C;
+  --secondary-color: #ffffff;
+  --highlight-color: #FF9E44;
+  --darker-background: #222222;
+  --border-radius-base: 8px;
+}
+
 *{
   font-family: "Rubik", sans-serif;
 }
@@ -17,13 +25,13 @@ nav{
   box-shadow: 0px 4px 4px 0px #00000025;
 
   a{
-    color:#3C3C3C;
+    color: var(--primary-color);
     text-decoration: none;
   }
 }
 
 .title{
-  color: #ffffff;
+  color: var(--secondary-color);
   font-size: 3.8rem;
   text-transform: uppercase;
 }
@@ -34,10 +42,14 @@ nav{
   li{
     padding-left: 73px;
   }
+
+  li:last-child{
+    font-weight: bold;
+  }
 }
 
 #homeSection{
-  background-color: #222222;
+  background-color: var(--darker-background);
   padding-top: 65px;
   display: flex;
   justify-content: space-between;
@@ -50,7 +62,7 @@ nav{
     background-position: center;
   }
 
-  #homeTexts{
+  #homeContent{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -67,7 +79,7 @@ nav{
 }
 
 #aboutSection{
-  background-color: #FF9E44;
+  background-color: var(--highlight-color);
   display: flex;
 
   #aboutMeTextsFlexContainer{
@@ -90,7 +102,7 @@ nav{
 
   p{
     font-size: 1.75rem;
-    color: #ffffff;
+    color: var(--secondary-color);
     padding: 45px 0 56px 0;
   }
 }
@@ -109,7 +121,7 @@ nav{
     align-items: center;
 
     h1{
-      color: #3C3C3C;
+      color: var(--primary-color);
       padding-bottom: 68px;
     }
 
@@ -125,8 +137,8 @@ nav{
     li{
       background-color: #00000039;
       padding: 12px 17px;
-      border-radius: 8px;
-      color: #ffffff;
+      border-radius: var(--border-radius-base);
+      color: var(--secondary-color);
       font-size: 1.93rem;
     }
   }
@@ -149,7 +161,7 @@ nav{
     }
 
     p{
-      color: #ffffff;
+      color: var(--secondary-color);
       font-size: 1.56rem;
     }
 
@@ -171,23 +183,23 @@ nav{
   align-items: center;
   width: fit-content;
   padding: 8px 14px;
-  color: #ffffff;
-  border-radius: 8px;
+  color: var(--secondary-color);
+  border-radius: var(--border-radius-base);
   cursor: pointer;
 
   a{
     padding-left: 11px;
-    color: #ffffff;
+    color: var(--secondary-color);
     text-decoration: none;
   }
 }
 
 .downloadButtonLight{
-  background-color: #FF9E44;
+  background-color: var(--highlight-color);
 }
 
 .downloadButtonDark{
-  background-color: #3C3C3C;
+  background-color: var(--primary-color);
 }
 
 .linkedinButton{
@@ -226,10 +238,73 @@ nav{
   a{
     background-color: #3756F3;
     padding: 12px;
-    border-radius: 8px;
+    border-radius: var(--border-radius-base);
   }
 
   img{
     height: 28px;
+  }
+}
+
+@media (orientation: portrait){
+  .title{
+    font-size: 2.6rem;
+  }
+
+  section{
+    min-height: 100vh;
+    height: fit-content;
+  }
+
+  #homeSection{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+    h2{
+      font-size: 1.71rem;
+    }
+
+    #homePhoto{
+      height: 30vh;
+      width: 30vh;
+      border-radius: 50%;
+      margin-bottom: 3.8rem;
+    }
+
+    #homeTexts{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  #aboutMePhoto{
+    display: none;
+  }
+
+  #aboutSection{
+    #aboutMeTextsFlexContainer{
+      text-align: justify;
+      width: 100vw;
+      align-items: center;
+
+      #aboutMeTextsFlexItem{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      p{
+        font-size: 1.54rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 700px){
+  nav{
+    display: none;
   }
 }
